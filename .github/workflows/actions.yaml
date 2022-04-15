@@ -33,4 +33,4 @@ jobs:
       - name: Build image
         run: docker-compose build
       - name: Push image to docker hub
-        run: docker-compose push -f
+        run: docker-compose push
