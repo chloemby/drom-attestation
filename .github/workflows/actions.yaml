@@ -34,3 +34,16 @@ jobs:
         run: docker-compose build
       - name: Push image to docker hub
         run: docker-compose push
+  deploy:
+    runs-on: self-hosted
+    needs:
+      - build
+    steps:
+      - name: Deploy via deployer
+        uses: musps/action-deployer-php@master
+      with:
+        args: deployer production -vvv
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+
+
