@@ -43,4 +43,4 @@ jobs:
         uses: deployphp/action@master
         with:
           private-key: ${{ secrets.PRIVATE_KEY }}
-          dep: deplo
+          dep: deploy
