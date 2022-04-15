@@ -1,6 +1,8 @@
 <?php
 namespace Deployer;
 
+require 'recipe/symfony4.php';
+
 // Project name
 set('application', 'drom-attestation');
 
