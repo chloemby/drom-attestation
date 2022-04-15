@@ -14,9 +14,6 @@ add('shared_files', [
     '.env.local'
 ]);
 
-// Writable dirs by web server 
-add('writable_dirs', []);
-
 
 // Hosts
 
