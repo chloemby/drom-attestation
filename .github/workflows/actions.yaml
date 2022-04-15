@@ -40,7 +40,4 @@ jobs:
       - build
     steps:
       - name: Deploy via deployer
-        uses: deployphp/action@master
-        with:
-          private-key: ${{ secrets.PRIVATE_KEY }}
-          dep: deploy
+        run: vendor/bin/dep deploy
