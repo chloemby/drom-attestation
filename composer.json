@@ -64,6 +64,7 @@
         }
     },
     "require-dev": {
+        "deployer/deployer": "^6.8",
         "symfony/browser-kit": "5.4.*",
         "symfony/css-selector": "5.4.*",
         "symfony/debug-bundle": "5.4.*",

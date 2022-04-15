@@ -1,4 +1,10 @@
 {
+    "deployer/deployer": {
+        "version": "v6.8.0"
+    },
+    "deployer/phar-update": {
+        "version": "v2.2.0"
+    },
     "doctrine/instantiator": {
         "version": "1.4.1"
     },
@@ -54,6 +60,9 @@
             "phpunit.xml.dist",
             "tests/bootstrap.php"
         ]
+    },
+    "pimple/pimple": {
+        "version": "v3.5.0"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -250,6 +259,9 @@
     },
     "symfony/polyfill-php81": {
         "version": "v1.25.0"
+    },
+    "symfony/process": {
+        "version": "v5.4.7"
     },
     "symfony/routing": {
         "version": "5.4",
