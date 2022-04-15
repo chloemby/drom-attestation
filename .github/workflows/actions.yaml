@@ -41,8 +41,8 @@ jobs:
     steps:
       - name: Deploy via deployer
         uses: musps/action-deployer-php@master
-      with:
-        args: deployer production -vvv
+        with:
+          args: deployer production -vvv
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
 
