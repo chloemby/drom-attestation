@@ -1,7 +1,7 @@
 <?php
 namespace Deployer;
 
-require 'recipe/symfony4.php';
+require 'recipe/composer.php';
 
 // Project name
 set('application', 'drom-attestation');
