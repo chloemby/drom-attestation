@@ -28,11 +28,9 @@ jobs:
       LOGIN: ${{ secrets.DOCKER_LOGIN }}
       NAME: ${{ secrets.DOCKER_NAME }}
     steps:
-      - name: Env vars
-        run: echo ${{ secrets.DOCKER_LOGIN }} ${{ secrets.DOCKER_NAME }}
       - name: Login to docker hub
         run: docker login -u ${{ secrets.DOCKER_LOGIN }} -p ${{ secrets.DOCKER_PWD }}
       - name: Build image
         run: docker-compose build
       - name: Push image to docker hub
-        run: docker-compose push -t $LOGIN/$NAME:${GITHUB_REF:11} -f
+        run: docker-compose push -f

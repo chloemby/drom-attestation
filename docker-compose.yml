@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: chloemby/drom-attestation
     container_name: app
     restart: unless-stopped
     working_dir: /var/www
