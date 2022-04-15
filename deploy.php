@@ -4,13 +4,10 @@ namespace Deployer;
 require 'recipe/symfony.php';
 
 // Project name
-set('application', 'my_project');
+set('application', 'drom-attestation');
 
 // Project repository
 set('repository', 'https://github.com/chloemby/drom-attestation.git');
-
-// [Optional] Allocate tty for git clone. Default value is false.
-set('git_tty', true); 
 
 // Shared files/dirs between deploys 
 add('shared_files', [
@@ -18,12 +15,7 @@ add('shared_files', [
 ]);
 
 // Writable dirs by web server 
-add('writable_dirs', [
-    'var',
-    'var/cache',
-    'var/log',
-    'var/sessions',
-]);
+add('writable_dirs', []);
 
 
 // Hosts
@@ -31,7 +23,7 @@ add('writable_dirs', [
 host('195.133.145.63')
     ->set('deploy_path', '/var/www/drom-attestation')
     ->user('deployer');
-    
+
 // Tasks
 
 task('build', function () {
