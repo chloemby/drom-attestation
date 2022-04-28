@@ -11,6 +11,6 @@ class IndexController extends AbstractController
 {
     public function indexAction(): Response
     {
-        return new Response('TEST');
+        return new Response('TEST 2');
     }
 }
